@@ -5,8 +5,9 @@ Guard-phpunit-sf2 is just a fork of Guard-phpunit
 
 The main goal is run guard-phpunit with Symfony2, the hope is to merge it with the original repo.
 
-Q: This is Horrible why not PR the original fork?
-A: This is a concept, I'll be very happy if you do it for me now, and there's also a iusse on the original repo https://github.com/Maher4Ever/guard-phpunit/issues/8]
+**Q:** This is Horrible why not PR the original fork?
+
+**A:** This is a concept, I'll be very happy if you do it for me now, and there's also a issue https://github.com/Maher4Ever/guard-phpunit/issues/8]
 
    there are some logic difference that could be solved via options, I'd like to have enough time to do it.
 
@@ -45,7 +46,7 @@ Usage
 
 Please read the [Guard usage documentation][3].
 
-easy:
+if you are lazy is easy:
 
 1. create the Guardfile as the example below then and put it in the root of your symfony2 project
 
@@ -119,9 +120,9 @@ The following options can be passed to Guard::PHPUnit:
 Author
 ------
 
-[Maher Sallam](https://github.com/Maher4Ever)
+[Maher Sallam](https://github.com/Maher4Ever) made guard-phpunit
 
-[Giulio De Donato](https://github.com/liuggio)
+[Giulio De Donato](https://github.com/liuggio) made guard-phpunit-sf2
 
 [1]:http://ruby-lang.org
 [3]:https://github.com/guard/guard#readme
