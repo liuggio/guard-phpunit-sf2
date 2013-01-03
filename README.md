@@ -6,8 +6,11 @@ Guard-phpunit-sf2 is just a fork of Guard-phpunit
 The main goal is run guard-phpunit with Symfony2, the hope is to merge it with the original repo.
 
 Q: This is Horrible why not PR the original fork?
-A: This is a concept, I'll be very happy if you do it for me now,
+A: This is a concept, I'll be very happy if you do it for me now, and there's also a iusse on the original repo https://github.com/Maher4Ever/guard-phpunit/issues/8]
+
    there are some logic difference that could be solved via options, I'd like to have enough time to do it.
+
+
 
 If you want to see the differences between **guard-phpunit** and **guard-phpunit-sf2** here [Differences](https://github.com/liuggio/guard-phpunit-sf2/compare/master)
 
