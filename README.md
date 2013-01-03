@@ -111,8 +111,8 @@ The following options can be passed to Guard::PHPUnit:
                               # when running the tests.
                               # default: nil
 
-:enable_progress_formatter => true # enable a progress formatter
-                              # default false
+:enable_progress_formatter => false # disable progress formatter
+                              # default true
 
 ```
 
