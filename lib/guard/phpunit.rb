@@ -20,7 +20,6 @@ module Guard
       :cli            => nil,
       :tests_path     => Dir.pwd,
       :enable_progress_formatter   => false,
-      :symfony2_support   => true,
     }
 
     # Initialize Guard::PHPUnit.

@@ -1,3 +1,10 @@
-guard 'phpunit', :cli => '--colors' do
-  watch(%r{^.+Test\.php$})
+guard 'phpunit', :cli => '--colors -c app/' do
+
+     # Watch tests files
+     watch(%r{^src\/.+Test\.php$})
+
+     # Watch src file and run its test,
+     # Test string: src/Tvision/Bundle/CartBundle/Repository/CartRepository.php
+     watch(%r{^src\/(.+)\/(.+)Bundle\/(.+)\.php$}) { |m| "src/#{m[1]}/#{m[2]}Bundle/Tests/#{m[3]}Test.php" } # Watch all files in your bundles and run the respective tests on change
+
 end
