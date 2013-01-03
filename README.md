@@ -1,12 +1,15 @@
 Guard::PHPUnit-sf2 [![Build Status](https://secure.travis-ci.org/liuggio/guard-phpunit-sf2.png)](http://travis-ci.org/liuggio/guard-phpunit-sf2) [![Dependency Status](https://gemnasium.com/liuggio/guard-phpunit-sf2.png?branch=master)](https://gemnasium.com/liuggio/guard-phpunit-sf2.png)
 ==============
 
-
 Guard-phpunit-sf2 is just a fork of Guard-phpunit
 
-The main goal is run guard-phpunit with Symfony2
+The main goal is run guard-phpunit with Symfony2, the hope is to merge it with the original repo.
 
-If you want to see the differences between **guard-phpunit** and **guard-phpunit-sf2** [Differences](https://github.com/liuggio/guard-phpunit-sf2/compare/master)
+Q: This is Horrible why not PR the original fork?
+A: This is a concept, I'll be very happy if you do it for me now,
+   there are some logic difference that could be solved via options, I'd like to have enough time to do it.
+
+If you want to see the differences between **guard-phpunit** and **guard-phpunit-sf2** here [Differences](https://github.com/liuggio/guard-phpunit-sf2/compare/master)
 
 
 Guard::PHPUnit-sf2
@@ -21,20 +24,18 @@ and it will notify you about the status of your tests!
 *Note*: Although guard-phpunit-sf2 should work with any [PHP][7] version [PHPUnit][6] supports,
 it has only been tested on [PHP][7] 5.3.8 and 5.4.4.
 
-Install
+Install/Compile
 -------
 
 Please be sure to have [PHP][7], [PHPUnit][6] and [Ruby][1] installed on your machine before
 you proceed with the installation.
 
-The latest versions of [Ruby][1] come with a packages-manager called `gem`. `gem` can be used to
-install various packages, including guard-phpunit-sf2.
+guard-phpunit-sf2 has not been pushed on RubyGems. If you want to try it, clone the repository, build the gem and install it.
 
-To install guard-phpunit-sf2, run the following command in the terminal:
-
-```shell
-$ gem install guard-phpunit-sf2
-```
+	git clone git@github.com:liuggio/guard-phpunit-sf2.git
+	cd guard-phpunit-sf2
+	gem build guard-phpunit-sf2.gemspec
+	sudo gem instal guard-phpunit-sf2-0.1.4.gem
 
 Usage
 -----
@@ -116,6 +117,7 @@ Author
 ------
 
 [Maher Sallam](https://github.com/Maher4Ever)
+
 [Giulio De Donato](https://github.com/liuggio)
 
 [1]:http://ruby-lang.org
