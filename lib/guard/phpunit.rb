@@ -18,7 +18,9 @@ module Guard
       :all_after_pass => true,
       :keep_failed    => true,
       :cli            => nil,
-      :tests_path     => Dir.pwd
+      :tests_path     => Dir.pwd,
+      :enable_progress_formatter   => false,
+      :symfony2_support   => true,
     }
 
     # Initialize Guard::PHPUnit.
@@ -70,10 +72,11 @@ module Guard
     #
     def run_on_changes(paths)
       paths = Inspector.clean(paths + @failed_paths)
-      success = Runner.run(paths, options)
 
+      success = Runner.run(paths, options)
       update_failed_paths(success, paths)
       run_all_after_pass(success)
+
       throw :task_has_failed unless success
     end
 

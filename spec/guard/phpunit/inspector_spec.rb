@@ -26,9 +26,5 @@ describe Guard::PHPUnit::Inspector do
       subject.clean(['spec/fixtures/sampleTest.php', nil]).should == ['spec/fixtures/sampleTest.php']
     end
 
-    it 'frees up the list of tests files' do
-      subject.should_receive(:clear_tests_files_list)
-      subject.clean(['classTest.php'])
-    end
   end
 end

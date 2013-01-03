@@ -45,7 +45,7 @@ describe Guard::PHPUnit::Runner do
       it 'runs phpunit tests' do
         formatter_path = @project_path.join('lib', 'guard', 'phpunit', 'formatters', 'PHPUnit-Progress')
         subject.should_receive(:execute_command).with(
-          %r{^phpunit --include-path #{formatter_path} --printer PHPUnit_Extensions_Progress_ResultPrinter .+$}
+          %r{^phpunit .+$}
         ).and_return(true)
         subject.run( ['tests'] )
       end
@@ -128,7 +128,7 @@ describe Guard::PHPUnit::Runner do
           it 'runs with CLI options passed to PHPUnit' do
             cli_options = '--colors --verbose'
             subject.should_receive(:execute_command).with(
-              %r{^phpunit .+ #{cli_options} .+$}
+              %r{^phpunit #{cli_options} .+$}
             ).and_return(true)
             subject.run( ['tests'], :cli => cli_options )
           end

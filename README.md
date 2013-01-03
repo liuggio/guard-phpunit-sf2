@@ -1,5 +1,18 @@
-Guard::PHPUnit [![Build Status](https://secure.travis-ci.org/Maher4Ever/guard-phpunit.png)](http://travis-ci.org/Maher4Ever/guard-phpunit) [![Dependency Status](https://gemnasium.com/Maher4Ever/guard-phpunit.png?branch=master)](https://gemnasium.com/Maher4Ever/guard-phpunit)
+Guard::PHPUnit-sf2 [![Build Status](https://secure.travis-ci.org/liuggio/guard-phpunit-sf2.png)](http://travis-ci.org/liuggio/guard-phpunit-sf2) [![Dependency Status](https://gemnasium.com/liuggio/guard-phpunit-sf2.png?branch=master)](https://gemnasium.com/liuggio/guard-phpunit-sf2.png)
 ==============
+
+
+Guard-phpunit-sf2 is just a fork of Guard-phpunit
+
+The main goal is make works guard with Symfony2
+
+If you want to see the differences with guard-phpunit here [Differences]
+
+
+
+Guard::PHPUnit
+==============
+
 
 Guard-phpunit allows you to automatically run [PHPUnit][6] tests when sources
 are modified. It helps with integrating test-driven development (TDD) into

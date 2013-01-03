@@ -19,7 +19,6 @@ module Guard
           paths.uniq!
           paths.compact!
           paths = paths.select { |p| test_file?(p) }
-          clear_tests_files_list
           paths
         end
 
@@ -31,22 +30,7 @@ module Guard
         # @return [Boolean] whether the path a valid test or not
         #
         def test_file?(path)
-          tests_files.include?(path)
-        end
-
-        # Scans the tests path and keeps a list of all
-        # tests paths.
-        #
-        def tests_files
-          @tests_files ||= Dir.glob( File.join(tests_path, '**', '*Test.php') )
-        end
-
-        # Clears the list of PHPUnit tests.
-        #
-        # @see #clean
-        #
-        def clear_tests_files_list
-          @tests_files = nil
+          File.exist?(path) and File.file?(path)
         end
       end
     end

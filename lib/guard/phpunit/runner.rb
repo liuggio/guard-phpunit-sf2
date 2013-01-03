@@ -27,7 +27,6 @@ module Guard
         #
         def run(paths, options = {})
           paths = Array(paths)
-
           return false if paths.empty?
 
           unless phpunit_exists?
@@ -171,14 +170,23 @@ module Guard
         # @see #run_tests
         #
         def phpunit_command(path, options)
-          formatter_path = File.join( File.dirname(__FILE__), 'formatters', 'PHPUnit-Progress')
+          
 
           cmd_parts = []
           cmd_parts << "phpunit"
-          cmd_parts << "--include-path #{formatter_path}"
-          cmd_parts << "--printer PHPUnit_Extensions_Progress_ResultPrinter"
+
+          if options[:enable_progress_formatter] == true
+            formatter_path = File.join( File.dirname(__FILE__), 'formatters', 'PHPUnit-Progress')
+            
+            cmd_parts << "--include-path #{formatter_path}"
+            cmd_parts << "--printer PHPUnit_Extensions_Progress_ResultPrinter"            
+          end
+
           cmd_parts << options[:cli] if options[:cli]
-          cmd_parts << path
+
+          unless File.directory?(path)
+              cmd_parts << path
+          end
 
           cmd_parts.join(' ')
         end

@@ -3,16 +3,16 @@ $:.push File.expand_path("../lib", __FILE__)
 require 'guard/phpunit/version'
 
 Gem::Specification.new do |s|
-  s.name        = "guard-phpunit"
+  s.name        = "guard-phpunit-sf2"
   s.version     = Guard::PHPUnitVersion::VERSION
-  s.authors     = ["Maher Sallam"]
-  s.email       = ["maher@sallam.me"]
+  s.authors     = ["Giulio De Donato", "Maher Sallam"]
+  s.email       = ["liuggio@gmail.com", "maher@sallam.me"]
   s.homepage    = ""
-  s.summary     = %q{Guard gem for PHPUnit}
-  s.description = %q{Guard::PHPUnit automatically run your unit-tests written with the PHPUnit testing framework.}
+  s.summary     = %q{Guard gem for PHPUnit and Symfony2}
+  s.description = %q{Guard::PHPUnit automatically run your unit-tests written with the PHPUnit testing framework with Symfony2.}
 
   s.required_rubygems_version = '>= 1.3.6'
-  s.rubyforge_project = 'guard-phpunit'
+  s.rubyforge_project = 'guard-phpunit-sf2'
 
   s.add_runtime_dependency 'guard', '~> 1.1'
 
