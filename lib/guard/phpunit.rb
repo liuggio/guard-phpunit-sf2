@@ -19,7 +19,7 @@ module Guard
       :keep_failed    => true,
       :cli            => nil,
       :tests_path     => Dir.pwd,
-      :enable_progress_formatter   => true,
+      :enable_progress_formatter   => false,
     }
 
     # Initialize Guard::PHPUnit.
