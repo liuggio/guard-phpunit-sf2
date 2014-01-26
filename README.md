@@ -36,7 +36,7 @@ you proceed with the installation.
 
 guard-phpunit-sf2 has not been pushed on RubyGems. If you want to try it, clone the repository, build the gem and install it.
 
-	git clone git@github.com:liuggio/guard-phpunit-sf2.git
+	git clone git://github.com/liuggio/guard-phpunit-sf2.git
 	cd guard-phpunit-sf2
 	gem build guard-phpunit-sf2.gemspec
 	sudo gem instal guard-phpunit-sf2-0.1.4.gem
